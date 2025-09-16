@@ -1,22 +1,24 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
-export function FetchApi({ url, children }) {
-  const [data, setData] = useState([]);
+export const url = "http://localhost:3000/api/slides"
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error("Fejl ved fetch:", error);
-      }
-    };
+// export function FetchApi({ url, children }) {
+//   const [data, setData] = useState([]);
 
-    fetchData();
-  }, [url]);
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await fetch(url);
+//         const jsonData = await response.json();
+//         setData(jsonData);
+//       } catch (error) {
+//         console.error("Fejl ved fetch:", error);
+//       }
+//     };
 
-  return children(data); //
-    // Returner children som en funktion, der modtager data som argumen
-}
+//     fetchData();
+//   }, [url]);
+
+//   return children(data); //
+//     // Returner children som en funktion, der modtager data som argumen
+// }

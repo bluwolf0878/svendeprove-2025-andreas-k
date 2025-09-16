@@ -2,9 +2,9 @@
 
 
 // A simple main component that wraps its children in a <main> HTML element.
-export const Body = ({children}) => {
+export const Body = ({children, className}) => {
     return (
-        <main>
+        <main className={className}>
             {children}
         </main>
     )

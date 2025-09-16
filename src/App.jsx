@@ -13,7 +13,7 @@ function App() {
     <>
     <Header/>
 
-    <Body classname="position-relative">
+    <Body className="relative">
       <AppRouter></AppRouter>
     </Body>
     

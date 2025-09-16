@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
     <ErrorBoundary>
       <AuthProvider>
         <Router>
-          <App/>
+          <App />
         </Router>
       </AuthProvider>
     </ErrorBoundary>
