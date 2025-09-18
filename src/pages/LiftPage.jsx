@@ -1,9 +1,9 @@
-import LoginForm from "../components/LoginForm/loginform.jsx";
 import { ContentWrapper } from "../components/ContentWrapper/ContentWrapper.jsx";
+import { LiftList } from "../components/LiftList/LiftList.jsx";
 
 export default function Login() {
   return (
     <ContentWrapper>
-        <LoginForm/>
+      <LiftList/>
     </ContentWrapper>
   )}

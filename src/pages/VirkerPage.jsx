@@ -1,5 +1,5 @@
 
-import { ProductList } from "../components/ProductList/ProductList";
+import { ProductList } from "../components/LiftList/LiftList";
 import { ContentWrapper } from "../components/ContentWrapper/ContentWrapper";
 
 export default function ProductPage() {

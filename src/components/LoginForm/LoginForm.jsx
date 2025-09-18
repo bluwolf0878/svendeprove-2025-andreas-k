@@ -6,17 +6,17 @@ export default function LoginForm() {
   const {LoginData, setLoginData} = useAuth();
 
   const onSubmit = async (formData) => {
-    const url = "http://localhost:3306/api/auth/login"
+    const url = "http://localhost:3000/api/auth/login";
     try {
-      const result = await fetch(rules, {
+      const result = await fetch(url, {
         method: 'post',
         headers: {
           Accept: "application/json",
-          "content-type": "applicaton/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           username: formData.username,
-          password: dormData.password
+          password: formData.password
         })
       })
 
@@ -29,13 +29,13 @@ export default function LoginForm() {
       }
 
     } catch (error) {
-      console.error(error)
+      console.error("forkert email eller adgangskode")
     }
   }
 
   const LogOut = () => {
     sessionStorage.removeItem('access_Token')
-    setLoginData('')
+    setLoginData(null)
   }
 
   return (

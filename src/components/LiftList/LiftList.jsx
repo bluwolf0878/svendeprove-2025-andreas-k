@@ -1,5 +1,5 @@
 
-export function ProductList() {
+export function LiftList() {
     
     return (
         <></>
