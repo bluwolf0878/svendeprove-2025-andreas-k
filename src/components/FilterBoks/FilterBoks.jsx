@@ -24,7 +24,7 @@ export function FilterBoks({onChange}) {
                 <h2 className="font-bold text-lg">filtrer</h2>
                 <div>
                     <label className="block font-semibold mb-1">Antal pladser</label>
-                    <input type="range" min="1" max="6" value={Filters.seats} onChange={(e) => updateFilters({ seats: perseInt(e.target.value) })} className="w-full"/>
+                    <input type="range" min="1" max="4" value={Filters.seats} onChange={(e) => updateFilters({ seats: parseInt(e.target.value) })} className="w-full"/>
                     <p>{Filters.seats}pladser</p>
                 </div>
             </div>

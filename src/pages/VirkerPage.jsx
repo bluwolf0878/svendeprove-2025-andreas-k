@@ -1,10 +1,8 @@
 
-import { ProductList } from "../components/LiftList/LiftList";
 import { ContentWrapper } from "../components/ContentWrapper/ContentWrapper";
 
-export default function ProductPage() {
+export default function VirkerPage() {
   return (
     <ContentWrapper>
-     <ProductList />
     </ContentWrapper>
   )}

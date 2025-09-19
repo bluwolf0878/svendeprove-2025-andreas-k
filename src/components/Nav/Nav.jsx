@@ -17,8 +17,8 @@ export const Navbar = () => {
     <nav className="p-4 flex items-center justify-between">
         <ul className="flex text-lg font-bold mt-auto space-x-4">
             <li><NavLink to="/"> <img src="/logo.png" alt="" /> </NavLink></li>
-            <li><NavLink to="/login"> find et lift </NavLink></li>
-            <li><NavLink to="/Products"> sådan birker det </NavLink></li>
+            <li><NavLink to="/find-et-lift"> find et lift </NavLink></li>
+            <li><NavLink to="/VirkerPage"> sådan Virker det </NavLink></li>
         </ul>
 
         {!LoginData ? (
